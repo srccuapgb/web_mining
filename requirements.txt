@@ -1,0 +1,7 @@
+feedparser>=6.0
+requests>=2.31
+trafilatura>=1.8
+pandas
+scikit-learn
+networkx
+matplotlib
