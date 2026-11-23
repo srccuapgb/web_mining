@@ -22,11 +22,11 @@ import feedparser
 import requests
 import trafilatura
 
-UA = "HUST-WebMining-StudentCrawler/0.1 (contact: nhom@example.com)"  # doi email
+UA = "HUST-WebMining-StudentCrawler/0.1 (contact: phamgiabaohust68@gmail.com)"  # doi email
 DB_PATH = "data/news.db"
 DELAY = 1.5          # giay giua hai request tai noi dung
 MAX_ATTEMPTS = 3
-BODY_BATCH = 200     # so bai tai noi dung moi vong
+BODY_BATCH = 2000     # so bai tai noi dung moi vong
 
 # URL RSS: PHAI tu kiem tra tung URL tren trinh duyet truoc khi chay.
 FEEDS = {
@@ -40,7 +40,7 @@ FEEDS = {
     "tuoitre": ["https://tuoitre.vn/rss/tin-moi-nhat.rss"],
     "thanhnien": ["https://thanhnien.vn/rss/home.rss"],
     "dantri": ["https://dantri.com.vn/rss/home.rss"],       # chua xac minh
-    "vietnamnet": ["https://vietnamnet.vn/rss/tin-moi-nhat.rss"],  # chua xac minh
+    "vietnamnet": ["http://vietnamnet.vn/rss/thoi-su.rss"],  # chua xac minh
 }
 
 log = logging.getLogger("crawler")

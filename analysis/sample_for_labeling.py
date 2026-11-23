@@ -2,7 +2,7 @@
 import sqlite3
 import pandas as pd
 
-N_PER_BIN = 40
+N_PER_BIN = 200
 pairs = pd.read_csv("data/pairs.csv")
 db = sqlite3.connect("data/news.db")
 title = dict(db.execute("SELECT url, title FROM articles"))
